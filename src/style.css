@@ -194,8 +194,9 @@ header {
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
   padding: 2px;
+  margin-bottom: 40px;
 }
 #home .row {
   display: flex;
@@ -258,7 +259,7 @@ header {
   transition: all 0.5s ease-in-out;
 }
 .backendtext {
-  translate: -100%;
+  translate: -110%;
 }
 
 #home .row h2:hover {
@@ -357,6 +358,7 @@ header {
   justify-content: space-between;
   width: 100%;
   position: relative;
+  top: 116px;
 }
 #home .row-2 .image-rotate {
   position: relative;
@@ -419,7 +421,6 @@ header {
 #about .container h1 {
   font-size: 60px;
   text-transform: uppercase;
-  font-family: "Anton", sans-serif;
   color: var(--colormain);
 }
 
@@ -429,16 +430,12 @@ header {
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* .fade-paragraph.visible {
-  opacity: 1;
-  transform: translateY(0);
-} */
-
 #about .container .fade-paragraph {
   opacity: 0.1;
   transition: opacity 1s ease;
   font-size: 28px;
-  line-height: 1.4;
+  line-height: 1.5;
+  margin: 15px 0;
   color: var(--colormain);
 }
 
@@ -574,8 +571,8 @@ header {
     width: min(100% - 15px, 500px);
   }
   #home .container {
-    width: 90%;
-    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    grid-template-rows: 0fr 0.7fr;
   }
   #home .row {
     flex-direction: column; /* Ensure a vertical layout on smaller screens */
@@ -586,8 +583,13 @@ header {
   }
   #home .row h1,
   #home .row h2 {
-    font-size: 68px; /* Further adjust font size for small screens */
-    letter-spacing: 3px;
+    font-size: 68px;
+    letter-spacing: 2px;
+  }
+  #home .row-2 {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
   }
 
   #about {
@@ -595,7 +597,23 @@ header {
   }
 }
 @media screen and (max-width: 478px) {
+  #home .row h1,
+  #home .row h2 {
+    font-size: 56px;
+    letter-spacing: 1px;
+  }
+  .nav-menu ul li a {
+    font-size: 3vw;
+  }
   #about {
     height: 1100px;
+  }
+  .fade-paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px 0;
+  }
+  #about .container h1 {
+    font-size: 47px;
   }
 }
