@@ -6,9 +6,9 @@ import Contact from "./Pages/Contact";
 const MainComponent = () => {
   return (
     <Routes>
-      <Route path="/Abdul_Samad" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/Abdul_Samad/" element={<Home />} />
+      <Route path="/Abdul_Samad/about" element={<About />} />
+      <Route path="/Abdul_Samad/contact" element={<Contact />} />
     </Routes>
   );
 };
