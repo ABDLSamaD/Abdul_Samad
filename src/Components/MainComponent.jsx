@@ -6,7 +6,7 @@ import Contact from "./Pages/Contact";
 const MainComponent = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/Abdul_Samad" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
