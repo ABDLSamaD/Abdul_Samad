@@ -289,6 +289,7 @@ header {
     height: 100%;
     object-fit: cover;
     position: relative;
+    border-radius: 69% 31% 60% 40% / 52% 67% 33% 48%;
   }
 }
 /* Add 3D effect and delay the appearance of pseudo-elements */
@@ -349,7 +350,6 @@ header {
   100% {
     transform: translateX(0%);
     opacity: 1;
-    border-radius: 69% 31% 60% 40% / 52% 67% 33% 48%;
   }
 }
 
