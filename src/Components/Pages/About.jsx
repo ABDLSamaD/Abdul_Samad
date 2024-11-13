@@ -49,7 +49,7 @@ const About = () => {
               Hi, I am Ab Samad ✌️
             </h1>
             <p className="text-lg font-sans tracking-wide text-cyan-50 leading-6 text-wrap mt-4">
-              My name is Abdul Samad Chukwuemeke ,I am a Web Developer with a
+              My name is Abdul Samad ,I am a Web Developer with a
               primary focus on front-end development. I Love Working at the
               intersection Of Creativity. I have a knack for creating
               user-friendly, aesthetically pleasing functional Web Products
